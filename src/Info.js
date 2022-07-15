@@ -14,10 +14,11 @@ const Info = () => {
   });
  */
 
+  /* 마운트될 때만
   useEffect(() => {
     console.log("마운트될 때만 실행됩니다.");
   }, []);
-
+ */
   const onChangeName = (e) => {
     setName(e.target.value);
   };

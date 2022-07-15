@@ -19,6 +19,12 @@ const Info = () => {
     console.log("마운트될 때만 실행됩니다.");
   }, []);
  */
+
+  useEffect(()=>{
+    console.log('특정값이 변경될 때만')
+    console.log(name);
+  }, [name])
+
   const onChangeName = (e) => {
     setName(e.target.value);
   };

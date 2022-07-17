@@ -20,10 +20,12 @@ const Info = () => {
   }, []);
  */
 
+  /* 특정값 변경될 때만
   useEffect(()=>{
     console.log('특정값이 변경될 때만')
     console.log(name);
   }, [name])
+ */
 
   const onChangeName = (e) => {
     setName(e.target.value);

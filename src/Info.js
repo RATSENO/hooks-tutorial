@@ -27,6 +27,15 @@ const Info = () => {
   }, [name])
  */
 
+  useEffect(() => {
+    console.log('effect')
+    console.log(name)
+    return () => {
+      console.log('cleanup')
+      console.log(name)
+    };
+  }, [name])
+
   const onChangeName = (e) => {
     setName(e.target.value);
   };
